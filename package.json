@@ -1,0 +1,38 @@
+{
+  "name": "powerflow",
+  "version": "1.0.0",
+  "description": "Hexatown is a Fantasy city, a city populated by Hexaheads. Hexaheads are not square heads, but a species with a digital approach to things. We hexaheads like to have control over what we do, but in this world of constant changes, all our existing methods is challenged.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "changelog": "lerna-changelog",
+    "e2e": "tasks/e2e-simple.sh",
+    "clean": "lerna clean",
+    "e2e:docker": "tasks/local-test.sh",
+    "publish": "tasks/publish.sh",
+    "format": "prettier --trailing-comma es5 --single-quote --write 'packages/*/*.js' 'packages/*/!(node_modules)/**/*.js'",
+    "compile:lockfile": "node tasks/compile-lockfile.js"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hexatown/powerflow.git"
+  },
+  "devDependencies": {
+    "lerna": "^3.13.1",
+    "jest":"^26.0.1"
+  },
+  "dependencies": {
+    "@reach/router": "^1.3.1",
+    "graphql-compose": "^7.1.0"
+   
+  },
+  "author": "",
+  "license": "None",
+  "bugs": {
+    "url": "https://www.hexatown.com/powerflow/issues"
+  },
+  "homepage": "https://hexatown.com"
+}
